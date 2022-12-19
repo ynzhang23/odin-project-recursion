@@ -1,5 +1,3 @@
-require 'pry-byebug'
-
 def merge_sort(array)
   if array.length == 1
     return array
@@ -12,7 +10,6 @@ def merge_sort(array)
     temp_array = []
     # Until one array runs out of elements
     until left.length == 0 || right.length == 0
-      #binding.pry
       if left[0] > right[0]
         temp_array << right[0]
         right.shift
